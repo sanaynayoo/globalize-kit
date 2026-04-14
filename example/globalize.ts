@@ -1,4 +1,4 @@
-import { createGlobalize } from '@theo/globalize-kit';
+import { createGlobalize } from '@theo-i18n/globalize-kit';
 import { en, fr, my } from "./helpers/translations";
 
 export const globalize = createGlobalize({

@@ -1,6 +1,6 @@
 {
-  "name": "@theo/globalize-kit",
-  "version": "1.0.0",
+  "name": "@theo-i18n/globalize-kit",
+  "version": "1.0.1",
   "description": "A lightweight TypeScript internationalization toolkit for React Native, Expo, and web applications.",
   "type": "module",
   "main": "./dist/index.js",
@@ -21,6 +21,7 @@
     }
   },
   "keywords": [
+    "i18n",
     "translation",
     "localization",
     "internationalization",
@@ -28,7 +29,7 @@
     "react-native",
     "typescript"
   ],
-  "author": "theo",
+  "author": "Theo",
   "license": "MIT",
   "devDependencies": {
     "@types/react": "^19.2.14",
@@ -36,5 +37,16 @@
   },
   "peerDependencies": {
     "react": ">=18"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sanaynayoo/globalize-kit.git"
+  },
+  "homepage": "https://github.com/sanaynayoo/globalize-kit#readme",
+  "bugs": {
+    "url": "https://github.com/sanaynayoo/globalize-kit/issues"
   }
 }

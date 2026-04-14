@@ -1,6 +1,6 @@
 import React from "react";
 import { View, Text, TouchableOpacity, StyleSheet } from "react-native";
-import { useTranslation } from '@theo/globalize-kit'
+import { useTranslation } from '@theo-i18n/globalize-kit'
 
 // sample demo
 import { languageDemo, LanguageType } from '../data/language'

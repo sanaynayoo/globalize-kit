@@ -1,7 +1,7 @@
-# 🌍 @theo/globalize-kit
+# 🌍 @theo-i18n/globalize-kit
 
 <p align="center">
-  <img src="./assets/demo.gif" alt="Demo" width="360" />
+  <img src="https://raw.githubusercontent.com/sanaynayoo/globalize-kit/main/assets/demo.gif" alt="Demo" width="360" />
 </p>
 
 A lightweight, TypeScript-first internationalization toolkit for React Native, Expo, and React applications.
@@ -21,13 +21,13 @@ A lightweight, TypeScript-first internationalization toolkit for React Native, E
 ## 📦 Installation
 
 ```bash
-npm install @theo/globalize-kit
+npm i @theo-i18n/globalize-kit
 
 ```
 ### Or
 
 ```bash
-yarn add @theo/globalize-kit
+yarn add @theo-i18n/globalize-kit
 
 ```
 
@@ -69,7 +69,7 @@ export const fr = {
 ``` bash
 // globalize.ts
 
-import { createGlobalize } from "@theo/globalize-kit";
+import { createGlobalize } from "@theo-i18n/globalize-kit";
 import { en, my } from "./translations";
 
 createGlobalize({
@@ -89,7 +89,7 @@ createGlobalize({
 // App.tsx
 
 import React from "react";
-import { GlobalizeProvider } from "@theo/globalize-kit";
+import { GlobalizeProvider } from "@theo-i18n/globalize-kit";
 import "./globalize";
 import HomeScreen from "./HomeScreen";
 
@@ -108,7 +108,7 @@ export default function App() {
 ``` bash
 import React from "react";
 import { View, Text, TouchableOpacity } from "react-native";
-import { useTranslation } from '@theo/globalize-kit'
+import { useTranslation } from '@theo-i18n/globalize-kit'
 
 export default function HomeScreen() {
   const { t, language, changeLanguage } = useTranslation();
@@ -162,7 +162,7 @@ export default function HomeScreen() {
 | Global State Management | ✅ | Uses React Context for app-wide localization. |
 | Lightweight & Dependency-Free | ✅ | No external dependencies required. |
 | ESM Module Support | ✅ | Compatible with modern JavaScript module systems. |
-| Scoped npm Package | ✅ | Distributed as `@theo/globalize-kit`. |
+| Scoped npm Package | ✅ | Distributed as `@theo-i18n/globalize-kit`. |
 | Tree-Shakable Exports | ✅ | Optimized for smaller bundle sizes. |
 
 
@@ -170,4 +170,4 @@ export default function HomeScreen() {
 
 This project is licensed under the MIT License.
 
-If you find `@theo/globalize-kit` useful, please consider sharing it, writing about it, or giving it a ⭐ on GitHub.
+If you find `@theo-i18n/globalize-kit` useful, please consider sharing it, writing about it, or giving it a ⭐ on GitHub.

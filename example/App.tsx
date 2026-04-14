@@ -1,5 +1,5 @@
 import React from 'react';
-import { GlobalizeProvider } from '@theo/globalize-kit'
+import { GlobalizeProvider } from '@theo-i18n/globalize-kit'
 import './globalize'
 
 // screen
