@@ -53,7 +53,7 @@ export const mm = {
 // globalize.ts
 
 import { createGlobalize } from "@theo/globalize-kit";
-import { en, es } from "./translations";
+import { en, mm } from "./translations";
 
 createGlobalize({
   defaultLanguage: "en",

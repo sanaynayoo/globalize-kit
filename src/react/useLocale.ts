@@ -1,7 +1,8 @@
+import type { TranslationObject } from '../core/types';
 import { useGlobalizeContext } from './GlobalizeProvider';
 import { getConfig } from '../core/store';
 
-export const useLocale = () => {
+export const useLocale = <TLocale extends TranslationObject = TranslationObject>() => {
     const { language, changeLanguage } = useGlobalizeContext();
     const config = getConfig();
 
@@ -14,7 +15,7 @@ export const useLocale = () => {
         config.translations[config.fallbackLanguage || config.defaultLanguage];
 
     return {
-        locale,
+        locale: locale as TLocale,
         language,
         changeLanguage,
     };

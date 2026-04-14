@@ -2,14 +2,23 @@
   "name": "@theo/globalize-kit",
   "version": "1.0.0",
   "description": "A lightweight TypeScript internationalization toolkit for React Native, Expo, and web applications.",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "files": [
-    "dist"
+    "dist",
+    "README.md",
+    "LICENSE"
   ],
   "scripts": {
     "build": "tsc",
     "prepare": "npm run build"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
   },
   "keywords": [
     "translation",
@@ -19,13 +28,13 @@
     "react-native",
     "typescript"
   ],
+  "author": "theo",
+  "license": "MIT",
   "devDependencies": {
     "@types/react": "^19.2.14",
     "typescript": "^5.4.0"
   },
   "peerDependencies": {
-    "react": "^19.2.5"
-  },
-  "author": "theo",
-  "license": "MIT"
+    "react": ">=18"
+  }
 }
