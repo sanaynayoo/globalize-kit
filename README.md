@@ -30,14 +30,15 @@ yarn add @theo/globalize-kit
 ## 🚀 Quick Start
 
 ### 1. Define Your Translations
-
 ```bash
+# Create your own translation file under helpers/translations/en
 # en.ts
 export const en = {
   login: "Login",
   register: "Register",
 };
 
+#Create your own translation file under helpers/translations/mm
 # mm.ts
 export const mm = {
   login: "လော့ဂ်အင်",
@@ -59,7 +60,7 @@ createGlobalize({
   fallbackLanguage: "en",
   translations: {
       en,
-      es,
+      mm,
   },
 });
 
@@ -108,5 +109,5 @@ export default function HomeScreen() {
 
 ```
 
-## 📚 API Reference
+<!-- ## 📚 API Reference -->
 
