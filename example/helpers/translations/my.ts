@@ -1,4 +1,4 @@
-export const mm = {
+export const my = {
     auth: {
         login: "အကောင့်ဝင်ရန်",
     },

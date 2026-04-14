@@ -2,6 +2,12 @@
 
 A lightweight, TypeScript-first internationalization toolkit for React Native, Expo, and React applications.
 
+<h1 align="left">@theo/globalize-kit</h1>
+
+<p align="center">
+  <img src="./assets/demo.gif" alt="Demo" width="900" />
+</p>
+
 ## ✨ Features
 
 - 🌐 Multi-language translation support
@@ -40,13 +46,22 @@ export const en = {
   register: "Register",
 };
 
-#Create your own translation file under helpers/translations/mm
+#Create your own translation file under helpers/translations/my
 # my.ts
 export const my = {
   auth:{
     login: "အကောင့်ဝင်ရန်",
   },
   register: "စာရင်းသွင်းရန်",
+};
+
+#Create your own translation file under helpers/translations/fr
+# fr.ts
+export const fr = {
+    auth: {
+        login: "Connexion",
+    },
+    register: "S'inscrire",
 };
 
 ```
@@ -95,16 +110,16 @@ export default function App() {
 ``` bash
 import React from "react";
 import { View, Text, TouchableOpacity } from "react-native";
-import { useLocale } from "@theo/globalize-kit";
+import { useTranslation } from '@theo/globalize-kit'
 
 export default function HomeScreen() {
-  const { locale, changeLanguage } = useLocale();
+  const { t, language, changeLanguage } = useTranslation();
 
   return (
     <View>
-      <Text>{locale.login}</Text>
+      <Text>{t('auth.login')}</Text>
 
-      <TouchableOpacity onPress={() => changeLanguage("en")}>
+      <TouchableOpacity onPress={() => changeLanguage("my")}>
         <Text>Change Language</Text>
       </TouchableOpacity>
     </View>
@@ -153,3 +168,9 @@ export default function HomeScreen() {
 | Scoped npm Package | ✅ | Distributed as `@theo/globalize-kit`. |
 | Tree-Shakable Exports | ✅ | Optimized for smaller bundle sizes. |
 
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+If you find `@theo/globalize-kit` useful, please consider sharing it, writing about it, or giving it a ⭐ on GitHub.
