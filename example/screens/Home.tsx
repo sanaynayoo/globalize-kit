@@ -12,10 +12,10 @@ export default function HomeScreen() {
             <Text>{locale.register}</Text>
 
             <TouchableOpacity onPress={() => {
-                if (language === 'mm') {
+                if (language === 'my') {
                     changeLanguage("en")
                 } else {
-                    changeLanguage("mm")
+                    changeLanguage("my")
                 }
             }}>
                 <Text>Change Language</Text>

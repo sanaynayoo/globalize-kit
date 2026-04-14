@@ -1,2 +1,2 @@
 export * from './en'
-export * from './mm'
+export * from './my'

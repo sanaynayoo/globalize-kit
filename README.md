@@ -34,15 +34,19 @@ yarn add @theo/globalize-kit
 # Create your own translation file under helpers/translations/en
 # en.ts
 export const en = {
-  login: "Login",
+  auth: {
+    login: "Login"
+  },
   register: "Register",
 };
 
 #Create your own translation file under helpers/translations/mm
-# mm.ts
-export const mm = {
-  login: "လော့ဂ်အင်",
-  register: "အကောင့်ဖွင့်ပါ",
+# my.ts
+export const my = {
+  auth:{
+    login: "အကောင့်ဝင်ရန်",
+  },
+  register: "စာရင်းသွင်းရန်",
 };
 
 ```
@@ -53,14 +57,14 @@ export const mm = {
 // globalize.ts
 
 import { createGlobalize } from "@theo/globalize-kit";
-import { en, mm } from "./translations";
+import { en, my } from "./translations";
 
 createGlobalize({
   defaultLanguage: "en",
   fallbackLanguage: "en",
   translations: {
       en,
-      mm,
+      my,
   },
 });
 
@@ -109,5 +113,43 @@ export default function HomeScreen() {
 
 ```
 
-<!-- ## 📚 API Reference -->
+### 🌍 Recommended ISO Language Codes
+
+| Language | ISO Code |
+|----------|----------|
+| English | `en` |
+| Burmese (Myanmar) | `my` |
+| Spanish | `es` |
+| French | `fr` |
+| German | `de` |
+| Arabic | `ar` |
+| Chinese | `zh` |
+| Japanese | `ja` |
+| Korean | `ko` |
+| Portuguese | `pt` |
+| Italian | `it` |
+| Dutch | `nl` |
+| Turkish | `tr` |
+| Hindi | `hi` |
+| Thai | `th` |
+| Vietnamese | `vi` |
+
+
+## 📊 Feature Summary
+
+| Feature | Supported | Description |
+|:--------|:---------:|-------------|
+| Flat Translation Keys | ✅ | Supports simple key-value translations like `t("login")`. |
+| Nested Keys (Dot Notation) | ✅ | Access nested values such as `t("auth.login")`. |
+| TypeScript Support | ✅ | Fully typed for an improved developer experience. |
+| React Native & Expo Compatible | ✅ | Designed for seamless integration with Expo and React Native. |
+| Current Language Code | ✅ | Retrieve the active language at runtime using `language` (e.g., `en`, `my`). |
+| Dynamic Language Switching | ✅ | Change languages at runtime using `changeLanguage()`. |
+| Fallback Language | ✅ | Falls back to a default language when a key is missing. |
+| Missing Key Handling | ✅ | Returns the key itself when a translation is unavailable. |
+| Global State Management | ✅ | Uses React Context for app-wide localization. |
+| Lightweight & Dependency-Free | ✅ | No external dependencies required. |
+| ESM Module Support | ✅ | Compatible with modern JavaScript module systems. |
+| Scoped npm Package | ✅ | Distributed as `@theo/globalize-kit`. |
+| Tree-Shakable Exports | ✅ | Optimized for smaller bundle sizes. |
 
