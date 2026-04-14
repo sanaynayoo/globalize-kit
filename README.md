@@ -19,19 +19,94 @@ A lightweight, TypeScript-first internationalization toolkit for React Native, E
 ```bash
 npm install @theo/globalize-kit
 
-## Or
+```
+### Or
 
 ```bash
 yarn add @theo/globalize-kit
 
-# 🚀 Quick Start
+```
 
-## 1. Define Your Translations
+## 🚀 Quick Start
 
-### translations.ts
+### 1. Define Your Translations
+
 ```bash
+# en.ts
 export const en = {
   login: "Login",
   register: "Register",
 };
+
+# mm.ts
+export const mm = {
+  login: "လော့ဂ်အင်",
+  register: "အကောင့်ဖွင့်ပါ",
+};
+
+```
+
+### 2. Initialize the Library
+
+``` bash
+// globalize.ts
+
+import { createGlobalize } from "@theo/globalize-kit";
+import { en, es } from "./translations";
+
+createGlobalize({
+  defaultLanguage: "en",
+  fallbackLanguage: "en",
+  translations: {
+      en,
+      es,
+  },
+});
+
+```
+
+### 3. Wrap Your Application
+
+``` bash
+// App.tsx
+
+import React from "react";
+import { GlobalizeProvider } from "@theo/globalize-kit";
+import "./globalize";
+import HomeScreen from "./HomeScreen";
+
+export default function App() {
+  return (
+    <GlobalizeProvider>
+      <HomeScreen />
+    </GlobalizeProvider>
+  );
+}
+
+```
+
+### 4. Use the Hook in Your Components
+
+``` bash
+import React from "react";
+import { View, Text, TouchableOpacity } from "react-native";
+import { useLocale } from "@theo/globalize-kit";
+
+export default function HomeScreen() {
+  const { locale, changeLanguage } = useLocale();
+
+  return (
+    <View>
+      <Text>{locale.login}</Text>
+
+      <TouchableOpacity onPress={() => changeLanguage("en")}>
+        <Text>Change Language</Text>
+      </TouchableOpacity>
+    </View>
+  );
+}
+
+```
+
+## 📚 API Reference
 

@@ -1,0 +1,105 @@
+# ==============================
+# Node.js Dependencies
+# ==============================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ==============================
+# Build Outputs
+# ==============================
+dist/
+build/
+lib/
+coverage/
+*.tsbuildinfo
+
+# ==============================
+# Environment Files
+# ==============================
+.env
+.env.*
+!.env.example
+
+# ==============================
+# Logs
+# ==============================
+logs/
+*.log
+
+# ==============================
+# Cache & Temporary Files
+# ==============================
+.cache/
+.tmp/
+.temp/
+.eslintcache
+
+# ==============================
+# IDE and Editor Files
+# ==============================
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+*.orig
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# ==============================
+# Testing
+# ==============================
+jest.config.js.snap
+*.snap
+
+# ==============================
+# Package Managers
+# ==============================
+.pnp/
+.pnp.js
+
+# ==============================
+# Storybook & Bundlers
+# ==============================
+storybook-static/
+out/
+.next/
+.expo/
+.expo-shared/
+web-build/
+
+# ==============================
+# npm Package Archives
+# ==============================
+*.tgz
+
+# ==============================
+# Optional: Ignore Lock Files
+# Uncomment ONLY if developing a library
+# ==============================
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# ==============================
+# TypeScript Generated Files
+# ==============================
+*.d.ts.map
+*.js.map
+
+# ==============================
+# Miscellaneous
+# ==============================
+*.bak
+*.tmp
+*.seed
+*.pid
+*.pid.lock
