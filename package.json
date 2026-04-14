@@ -1,6 +1,6 @@
 {
   "name": "@theo-i18n/globalize-kit",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A lightweight TypeScript internationalization toolkit for React Native, Expo, and web applications.",
   "type": "module",
   "main": "./dist/index.js",

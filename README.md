@@ -38,29 +38,35 @@ yarn add @theo-i18n/globalize-kit
 # Create your own translation file under helpers/translations/en
 # en.ts
 export const en = {
+  welcome: "Welcome!",
   auth: {
-    login: "Login"
+    login: "Login",
+    register: "Register",
   },
-  register: "Register",
 };
+
 
 #Create your own translation file under helpers/translations/my
 # my.ts
 export const my = {
-  auth:{
+  welcome: "ကြိုဆိုပါသည်!",
+  auth: {
     login: "အကောင့်ဝင်ရန်",
+    register: "စာရင်းသွင်းရန်",
   },
-  register: "စာရင်းသွင်းရန်",
 };
+
 
 #Create your own translation file under helpers/translations/fr
 # fr.ts
 export const fr = {
-    auth: {
-        login: "Connexion",
-    },
+  welcome: "Bienvenu!",
+  auth: {
+    login: "Connexion",
     register: "S'inscrire",
+  },
 };
+
 
 ```
 
@@ -70,7 +76,7 @@ export const fr = {
 // globalize.ts
 
 import { createGlobalize } from "@theo-i18n/globalize-kit";
-import { en, my } from "./translations";
+import { en, my, fr } from "./translations";
 
 createGlobalize({
   defaultLanguage: "en",
@@ -78,6 +84,7 @@ createGlobalize({
   translations: {
       en,
       my,
+      fr
   },
 });
 
@@ -115,7 +122,7 @@ export default function HomeScreen() {
 
   return (
     <View>
-      <Text>{t('auth.login')}</Text>
+      <Text>{t("welcome")}</Text>
 
       <TouchableOpacity onPress={() => changeLanguage("my")}>
         <Text>Change Language</Text>
