@@ -5,7 +5,7 @@ A lightweight, TypeScript-first internationalization toolkit for React Native, E
 <h1 align="left">@theo/globalize-kit</h1>
 
 <p align="center">
-  <img src="./assets/demo.gif" alt="Demo" width="900" />
+  <img src="./assets/demo.gif" alt="Demo" width="360" />
 </p>
 
 ## ✨ Features
