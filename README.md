@@ -1,10 +1,10 @@
 # 🌍 @theo/globalize-kit
 
-A lightweight, TypeScript-first internationalization toolkit for React Native, Expo, and React applications.
-
 <p align="center">
   <img src="./assets/demo.gif" alt="Demo" width="360" />
 </p>
+
+A lightweight, TypeScript-first internationalization toolkit for React Native, Expo, and React applications.
 
 ## ✨ Features
 
