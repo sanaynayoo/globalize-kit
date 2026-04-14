@@ -2,8 +2,6 @@
 
 A lightweight, TypeScript-first internationalization toolkit for React Native, Expo, and React applications.
 
-<h1 align="left">@theo/globalize-kit</h1>
-
 <p align="center">
   <img src="./assets/demo.gif" alt="Demo" width="360" />
 </p>
@@ -137,7 +135,6 @@ export default function HomeScreen() {
 | Spanish | `es` |
 | French | `fr` |
 | German | `de` |
-| Arabic | `ar` |
 | Chinese | `zh` |
 | Japanese | `ja` |
 | Korean | `ko` |
