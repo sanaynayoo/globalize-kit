@@ -21,7 +21,7 @@ A lightweight, TypeScript-first internationalization toolkit for React Native, E
 ## 📦 Installation
 
 ```bash
-npm i @theo-i18n/globalize-kit
+npm i @theo-i18n/globalize-kit 
 
 ```
 ### Or
