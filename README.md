@@ -1,7 +1,7 @@
 # 🌍 @theo-i18n/globalize-kit
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/sanaynayoo/globalize-kit/main/assets/demo.gif" alt="Demo" width="600" />
+  <img src="https://raw.githubusercontent.com/sanaynayoo/globalize-kit/main/assets/demo.gif" alt="Demo" style="width: 100%; max-width: 100%; height: auto;" />
 </p>
 
 A lightweight, TypeScript-first internationalization toolkit for React Native, Expo, and React applications.
