@@ -22,7 +22,7 @@
       },
       "edgeToEdgeEnabled": true,
       "predictiveBackGestureEnabled": false,
-      "package": "com.sureflow.example"
+      "package": "com.anonymous.example"
     },
     "web": {
       "favicon": "./assets/favicon.png"

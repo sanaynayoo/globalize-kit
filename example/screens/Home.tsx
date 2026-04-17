@@ -4,10 +4,10 @@ import LinearGradient from 'react-native-linear-gradient';
 import { useTranslation } from '@theo-i18n/globalize-kit'
 
 // sample demo
-import { languageDemo, LanguageType } from '../data/language'
+import { languageDemo, LanguageType } from "../data/language";
 
 export default function HomeScreen() {
-    const { t, language, changeLanguage } = useTranslation();
+  const { t, language, changeLanguage } = useTranslation();
 
     return (
         <View style={styles.container}>

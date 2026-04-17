@@ -1,9 +1,7 @@
 export const en = {
-    welcome: "Welcome!",
-    auth: {
-      login: "Login",
-      register: "Register",
-    },
-  };
-  
-  
+  welcome: "Welcome!",
+  auth: {
+    login: "Login",
+    register: "Register",
+  },
+};
