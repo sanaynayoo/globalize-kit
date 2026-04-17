@@ -1,6 +1,9 @@
 export const fr = {
+    welcome: "Bienvenu!",
     auth: {
-        login: "Connexion",
+      login: "Connexion",
+      register: "S'inscrire",
     },
-    register: "S'inscrire",
-};
+  };
+  
+  
