@@ -9,7 +9,7 @@
     "web": "expo start --web"
   },
   "dependencies": {
-    "@theo-i18n/globalize-kit": "file:../theo-i18n-globalize-kit-1.0.2.tgz",
+    "@theo-i18n/globalize-kit": "file:../theo-i18n-globalize-kit-1.0.3.tgz",
     "expo": "~54.0.33",
     "expo-status-bar": "~3.0.9",
     "react": "19.1.0",
