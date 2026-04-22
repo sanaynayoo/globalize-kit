@@ -1,6 +1,6 @@
 {
   "name": "@theo-i18n/globalize-kit",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A lightweight TypeScript internationalization toolkit for React Native, Expo, and web applications.",
   "type": "module",
   "main": "./dist/index.js",
@@ -22,12 +22,19 @@
   },
   "keywords": [
     "i18n",
-    "translation",
+    "translations",
     "localization",
     "internationalization",
-    "expo",
-    "react-native",
-    "typescript"
+    "language-switching",
+    "multilanguage",
+    "locales",
+    "type-safe-i18n",
+    "typed-translations",
+    "react-native-i18n",
+    "expo-localization",
+    "globalize-kit",
+    "nested-translations",
+    "dynamic-language-switching"
   ],
   "author": "Theo",
   "license": "MIT",
