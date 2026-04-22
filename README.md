@@ -35,7 +35,7 @@ yarn add @theo-i18n/globalize-kit
 
 ### 1. Define Your Translations
 ```bash
-# Create your own translation file under helpers/translations/en
+# Create your own translation file 
 # en.ts
 export const en = {
   welcome: "Welcome!",
@@ -45,8 +45,6 @@ export const en = {
   },
 };
 
-
-#Create your own translation file under helpers/translations/my
 # my.ts
 export const my = {
   welcome: "ကြိုဆိုပါသည်!",
@@ -56,8 +54,6 @@ export const my = {
   },
 };
 
-
-#Create your own translation file under helpers/translations/fr
 # fr.ts
 export const fr = {
   welcome: "Bienvenu!",
@@ -158,7 +154,7 @@ export default function HomeScreen() {
 
 | Feature | Supported | Description |
 |:--------|:---------:|-------------|
-| Flat Translation Keys | ✅ | Supports simple key-value translations like `t("login")`. |
+| Flat Translation Keys | ✅ | Supports simple key-value translations like `t("welcome")`. |
 | Nested Keys (Dot Notation) | ✅ | Access nested values such as `t("auth.login")`. |
 | TypeScript Support | ✅ | Fully typed for an improved developer experience. |
 | React Native & Expo Compatible | ✅ | Designed for seamless integration with Expo and React Native. |
