@@ -1,4 +1,4 @@
-# 🌍 @theo-i18n/globalize-kit
+## 🌍 @theo-i18n/globalize-kit
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/sanaynayoo/globalize-kit/main/assets/demo.gif" alt="Globalize Kit Demo" width="100%" />
@@ -8,7 +8,7 @@ A lightweight, TypeScript-first internationalization toolkit for React Native, E
 
 ---
 
-## ✨ Features
+### ✨ Features
 
 - 🌐 Multi-language translation support
 - ⚛️ Works with React Native, Expo, and React
@@ -21,15 +21,15 @@ A lightweight, TypeScript-first internationalization toolkit for React Native, E
 
 ---
 
-# 📦 Installation
+### 📦 Installation
 
-## npm
+#### npm
 
 ```bash
 npm install @theo-i18n/globalize-kit
 ```
 
-## yarn
+#### yarn
 
 ```bash
 yarn add @theo-i18n/globalize-kit
@@ -37,11 +37,11 @@ yarn add @theo-i18n/globalize-kit
 
 ---
 
-# 🚀 Quick Start
+### 🚀 Quick Start
 
-## 1. Create Translation Files
+#### 1. Create Translation Files
 
-### English
+#### English
 
 ```ts
 // translations/en.ts
@@ -55,7 +55,7 @@ export const en = {
 };
 ```
 
-### Burmese (Myanmar)
+#### Burmese (Myanmar)
 
 ```ts
 // translations/my.ts
@@ -69,7 +69,7 @@ export const my = {
 };
 ```
 
-### French
+#### French
 
 ```ts
 // translations/fr.ts
@@ -85,7 +85,7 @@ export const fr = {
 
 ---
 
-## 2. Initialize Globalize
+#### 2. Initialize Globalize
 
 ```ts
 // globalize.ts
@@ -116,7 +116,7 @@ export const globalize = createGlobalize({
 
 ---
 
-## 3. Wrap Your App with `GlobalizeProvider`
+#### 3. Wrap Your App with `GlobalizeProvider`
 
 ```tsx
 // App.tsx
@@ -138,7 +138,7 @@ export default function App() {
 
 ---
 
-## 4. Use Translation in Your Component
+#### 4. Use Translation in Your Component
 
 ```tsx
 // HomeScreen.tsx
@@ -171,7 +171,7 @@ export default function HomeScreen() {
 
 ---
 
-# 🌍 Recommended ISO Language Codes
+### 🌍 Recommended ISO Language Codes
 
 | Language | ISO Code |
 |----------|----------|
@@ -193,7 +193,7 @@ export default function HomeScreen() {
 
 ---
 
-# 📊 Feature Summary
+### 📊 Feature Summary
 
 | Feature | Supported | Description |
 |:--------|:---------:|-------------|
@@ -216,7 +216,7 @@ export default function HomeScreen() {
 
 ---
 
-# 📁 Suggested Project Structure
+### 📁 Suggested Project Structure
 
 ```bash
 project-root/
@@ -229,7 +229,7 @@ project-root/
 
 ---
 
-# 📄 License
+### 📄 License
 
 MIT License
 
