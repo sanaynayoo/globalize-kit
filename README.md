@@ -91,10 +91,7 @@ export const fr = {
 // globalize.ts
 
 import { createGlobalize } from "@theo-i18n/globalize-kit";
-
-import { en } from "./translations/en";
-import { my } from "./translations/my";
-import { fr } from "./translations/fr";
+import { en, fr, my } from "./helpers/translations";
 
 export const globalize = createGlobalize({
   defaultLanguage: "en",
