@@ -11,7 +11,7 @@ export const useTranslation = () => {
     }
 
     const locale =
-        config.translations[language] ||
+        config.translations[language.key] ||
         config.translations[config.fallbackLanguage || config.defaultLanguage];
 
     const fallbackLocale =

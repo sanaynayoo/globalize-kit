@@ -11,7 +11,7 @@ export const useLocale = <TLocale extends TranslationObject = TranslationObject>
     }
 
     const locale =
-        config.translations[language] ||
+        config.translations[language.key] ||
         config.translations[config.fallbackLanguage || config.defaultLanguage];
 
     return {

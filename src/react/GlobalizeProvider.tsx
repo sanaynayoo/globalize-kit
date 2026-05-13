@@ -1,9 +1,10 @@
 import React, { createContext, useContext, useMemo, useState } from 'react';
-import { getConfig, setCurrentLanguage } from '../core/store';
+import { getConfig, getLanguageByKey, setCurrentLanguage } from '../core/store';
+import type { LanguageType } from '../core/types';
 
 type GlobalizeContextType = {
-    language: string;
-    changeLanguage: (language: string) => void;
+    language: LanguageType;
+    changeLanguage: (language: LanguageType) => void;
 };
 
 const GlobalizeContext = createContext<GlobalizeContextType | null>(null);
@@ -17,12 +18,14 @@ export const GlobalizeProvider = ({ children }: {
         throw new Error('Globalize is not initialized. Call createGlobalize() first.');
     }
     
-    const [language, setLanguage] = useState(config.defaultLanguage);
+    const [language, setLanguage] = useState<LanguageType>(
+        getLanguageByKey(config.defaultLanguage)
+    );
 
     const value = useMemo(
         () => ({
             language,
-            changeLanguage: (lang: string) => {
+            changeLanguage: (lang: LanguageType) => {
                 setCurrentLanguage(lang);
                 setLanguage(lang);
             },

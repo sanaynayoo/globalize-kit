@@ -10,7 +10,7 @@ export const getLocaleObject = () => {
     const language = getCurrentLanguage();
 
     return (
-        config.translations[language] ||
+        config.translations[language.key] ||
         config.translations[config.fallbackLanguage || config.defaultLanguage]
     );
 };

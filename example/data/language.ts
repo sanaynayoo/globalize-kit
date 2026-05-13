@@ -1,21 +1,21 @@
 
 export type LanguageType = {
-    title: string,
-    code: string
+    language: string,
+    key: string
 }
 
 // sample demo
 export const languageDemo: LanguageType[] = [
     {
-        title: 'English',
-        code: 'en',
+        language: 'English',
+        key: 'en',
     },
     {
-        title: 'Burmese (Myanmar)',
-        code: 'my',
+        language: 'Burmese (Myanmar)',
+        key: 'my',
     },
     {
-        title: 'French',
-        code: 'fr',
+        language: 'French',
+        key: 'fr',
     },
 ]

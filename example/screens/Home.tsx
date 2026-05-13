@@ -7,7 +7,7 @@ import { useTranslation } from '@theo-i18n/globalize-kit'
 import { languageDemo, LanguageType } from "../data/language";
 
 export default function HomeScreen() {
-  const { t, language, changeLanguage } = useTranslation();
+    const { t, language, changeLanguage } = useTranslation();
 
     return (
         <View style={styles.container}>
@@ -18,14 +18,18 @@ export default function HomeScreen() {
                 style={{ flex: 1, width: '100%' }}
             />
             <View style={{ position: 'absolute', alignItems: 'center' }}>
-                <View style={{ height: 50 }}>
+                <View style={{ height: 50, alignItems: 'center', justifyContent: 'center' }}>
                     <Text style={styles.title}>{t('welcome')}</Text>
                 </View>
 
                 <View style={{ flexDirection: 'row', marginTop: 30 }}>
                     {languageDemo.map((list: LanguageType, idx: number) => (
-                        <TouchableOpacity onPress={() => changeLanguage(list.code)} key={idx} style={[styles.langContainer, { backgroundColor: language === list.code ? '#A0C19D' : 'transparent' }]}>
-                            <Text style={{ color: language === list.code ? '#000' : '#fff' }}>{list.title}</Text>
+                        <TouchableOpacity
+                            onPress={() => changeLanguage(list)}
+                            key={idx}
+                            style={[styles.langContainer, { backgroundColor: language.key === list.key ? '#A0C19D' : 'transparent' }]}
+                        >
+                            <Text style={{ color: language.key === list.key ? '#000' : '#fff' }}>{list.language}</Text>
                         </TouchableOpacity>
                     ))}
                 </View>
