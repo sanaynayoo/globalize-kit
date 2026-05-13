@@ -23,13 +23,13 @@ A lightweight, TypeScript-first internationalization toolkit for React Native, E
 
 ### 📦 Installation
 
-#### npm
+##### npm
 
 ```bash
 npm install @theo-i18n/globalize-kit
 ```
 
-#### yarn
+##### yarn
 
 ```bash
 yarn add @theo-i18n/globalize-kit
@@ -41,7 +41,7 @@ yarn add @theo-i18n/globalize-kit
 
 #### 1. Create Translation Files
 
-#### English
+##### English
 
 ```ts
 // translations/en.ts
@@ -55,7 +55,7 @@ export const en = {
 };
 ```
 
-#### Burmese (Myanmar)
+##### Burmese (Myanmar)
 
 ```ts
 // translations/my.ts
@@ -69,7 +69,7 @@ export const my = {
 };
 ```
 
-#### French
+##### French
 
 ```ts
 // translations/fr.ts
@@ -171,7 +171,7 @@ export default function HomeScreen() {
 
 ---
 
-### 🌍 Recommended ISO Language Codes
+#### 🌍 Recommended ISO Language Codes
 
 | Language | ISO Code |
 |----------|----------|
@@ -193,7 +193,7 @@ export default function HomeScreen() {
 
 ---
 
-### 📊 Feature Summary
+#### 📊 Feature Summary
 
 | Feature | Supported | Description |
 |:--------|:---------:|-------------|
@@ -216,7 +216,7 @@ export default function HomeScreen() {
 
 ---
 
-### 📁 Suggested Project Structure
+#### 📁 Suggested Project Structure
 
 ```bash
 project-root/
@@ -229,7 +229,7 @@ project-root/
 
 ---
 
-### 📄 License
+#### 📄 License
 
 MIT License
 
